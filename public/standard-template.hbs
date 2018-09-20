@@ -1,0 +1,245 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GrapesJS Firebase</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="dist/grapesjs-preset-webpage.min.js"></script>
+    <script src="dist/grapesjs-firestore.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="gjs" style="height:0px; overflow:hidden">
+      <head>
+          <meta charset="utf-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Your Project Title </title>
+          <meta name="description" content="">
+          <meta name="author" content="">
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" crossorigin="anonymous">
+          <link href="https://fonts.googleapis.com/css?family=Montserrat:400,300,700" rel="stylesheet" type="text/css">
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
+          <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="/stylesheets/BS.css">
+          
+      </head>
+
+    <div class="page-header gb-page-header" data-parallax="true">
+        <div class="filter">
+            <div class="container">
+                <div class="motto text-center">
+                    <h1>Landing Template </h1>
+                    <h3>Watch our explainer video. </h3> <br> <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" class="btn btn-outline-neutral btn-round"><i class="fa fa-play">
+            </i>Launch</a> <button type="button" class="btn btn-outline-neutral btn-round">Download App</button> </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="section text-center">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2 class="title">Showcase </h2>
+                        <h5 class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5> <br> <a href="#paper-kit" class="btn btn-danger btn-round">See Details</a> </div>
+                </div> <br> <br>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger"> <i class="fa fa-image">
+                  </i> </div>
+                            <div class="description">
+                                <h4 class="info-title">Gallery </h4>
+                                <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a href="#pkp" class="btn btn-link btn-danger">See more</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger"> <i class="fa fa-lightbulb-o">
+                  </i> </div>
+                            <div class="description">
+                                <h4 class="info-title">New Ideas </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> <a href="#pkp" class="btn btn-link btn-danger">See more</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger"> <i class="fa fa-bar-chart">
+                  </i> </div>
+                            <div class="description">
+                                <h4 class="info-title">Statistics </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p> <a href="#pkp" class="btn btn-link btn-danger">See more</a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="info">
+                            <div class="icon icon-danger"> <i class="fa fa-sun-o">
+                  </i> </div>
+                            <div class="description">
+                                <h4 class="info-title">Design </h4>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.</p> <a href="#" class="btn btn-link btn-danger">See more</a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section section-dark text-center">
+            <div class="container">
+                <h2 class="title">About Us</h2>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar"> <a href="#avatar"><img src="https://res.cloudinary.com/subtle-riot/image/facebook/officialchucknorrispage.jpg" alt="..."></a> </div>
+                            <div class="card-block">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">Chuck Norris </h4>
+                                        <h6 class="card-category">Developer...did you doubt his skills? </h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="card-footer text-center"> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter">
+                    </i></a> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus">
+                    </i></a> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin">
+                    </i></a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar"> <a href="#avatar"><img src="https://res.cloudinary.com/subtle-riot/image/facebook/officialchucknorrispage.jpg" alt="..."></a> </div>
+                            <div class="card-block">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">Chuck Norris </h4>
+                                        <h6 class="card-category">Founder and CEO...did you doubt his skills? </h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="card-footer text-center"> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter">
+                    </i></a> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus">
+                    </i></a> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin">
+                    </i></a> </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card card-profile card-plain">
+                            <div class="card-avatar"> <a href="#avatar"><img src="https://res.cloudinary.com/subtle-riot/image/facebook/officialchucknorrispage.jpg" alt="..."></a> </div>
+                            <div class="card-block">
+                                <a href="#paper-kit">
+                                    <div class="author">
+                                        <h4 class="card-title">Chuck Norris </h4>
+                                        <h6 class="card-category">Creative...did you doubt his skills? </h6>
+                                    </div>
+                                </a>
+                                <p class="card-description text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                            </div>
+                            <div class="card-footer text-center"> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-twitter">
+                    </i></a> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-google-plus">
+                    </i></a> <a href="#" class="btn btn-link btn-just-icon btn-neutral"><i class="fa fa-linkedin">
+                    </i></a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section landing-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 mx-auto">
+                        <h2 class="text-center">Contact Us</h2>
+                        <form class="contact-form">
+                            <div class="row">
+                                <div class="col-md-6"> <label>Name</label>
+                                    <div class="input-group"> <span class="input-group-addon">
+                        <i class="nc-icon nc-single-02">
+                        </i>
+                      </span> <input class="form-control" placeholder="Name" type="text"> </div>
+                                </div>
+                                <div class="col-md-6"> <label>Email</label>
+                                    <div class="input-group"> <span class="input-group-addon">
+                        <i class="nc-icon nc-email-85">
+                        </i>
+                      </span> <input class="form-control" placeholder="Email" type="text"> </div>
+                                </div>
+                            </div> <label>Message</label> <textarea class="form-control" rows="4" placeholder="Tell us your thoughts and feelings..."></textarea>
+                            <div class="row">
+                                <div class="col-md-4 offset-md-4"> <button class="btn btn-danger btn-lg btn-fill">Send Message</button> </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer section-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <ul>
+                        <li> <a href="#">Home</a> </li>
+                        <li> <a href="#">Blog</a> </li>
+                        <li> <a href="#">Terms</a> </li>
+                    </ul>
+                </nav>
+                <div class="credits ml-auto"> <span class="copyright">
+              ©2018, made with <i class="fa fa-heart heart">
+              </i> in CO
+            </span> </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" crossorigin="anonymous"></script>
+
+    </div>
+
+
+    <script type="text/javascript">
+      var firebaseApiKey = "" // process.env.FIREBASE_API_KEY;
+      var editor = grapesjs.init({
+        height: '100%',
+        showOffsets: 1,
+        noticeOnUnload: 0,
+        storageManager: { type: 'firestore' },
+        container: '#gjs',
+        fromElement: true,
+
+        plugins: ['grapesjs-firestore', 'gjs-preset-webpage'],
+        pluginsOpts: {
+          'grapesjs-firestore': {
+            docId: 'gjs',
+            apiKey: firebaseApiKey,
+            authDomain: 'grapesjs-502e3.firebaseapp.com',
+            projectId: 'grapesjs-502e3',
+          }
+        }
+      });
+
+      editor.on('storage:load', function(e) {
+        console.log('STORAGE:LOAD ', e);
+      });
+      editor.on('storage:store', function(e) {
+        console.log('STORAGE:STORE ', e);
+      });
+      editor.on('storage:error', function(e) {
+        console.log('STORAGE:ERROR ', e);
+      });
+      window.editor = editor;
+    </script>
+  </body>
+</html>

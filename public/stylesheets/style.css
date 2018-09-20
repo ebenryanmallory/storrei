@@ -1,0 +1,72 @@
+html {
+  font-family: ProximaNova,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  background: #fff;
+  color: #666;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+a {
+  color: #00B7FF;
+}
+::selection {
+  background: #39f;
+  color: #fff;
+  text-shadow: none;
+}
+svg#open-book {
+  max-width:45px;
+  fill: #777777;
+  margin-top: 40px;
+}
+.container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.uk-button {
+  margin: 0;
+  border: none;
+  overflow: visible;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 0 30px;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 38px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: .1s ease-in-out;
+  transition-property: color,background-color,border-color;
+}
+.uk-button:not(:disabled) {
+  cursor: pointer;
+}
+.uk-button-large {
+  padding: 0 40px;
+  line-height: 53px;
+  font-size: 14px;
+}
+.uk-button-small {
+  padding: 0 15px;
+  line-height: 28px;
+  font-size: 14px;
+}
+.uk-button-default {
+  background-color: transparent;
+  color: #222;
+  border: 1px solid #e5e5e5;
+}
+.uk-button-primary {
+  background-color: #1e87f0;
+  color: #fff;
+  border: 1px solid transparent;
+}

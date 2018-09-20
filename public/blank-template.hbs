@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>GrapesJS Firebase</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/grapesjs"></script>
+    <script src="dist/grapesjs-preset-webpage.min.js"></script>
+    <script src="dist/grapesjs-firestore.min.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div id="gjs" style="height:0px; overflow:hidden">
+
+    </div>
+
+
+    <script type="text/javascript">
+      var firebaseApiKey = "" // process.env.FIREBASE_API_KEY;
+      var editor = grapesjs.init({
+        height: '100%',
+        showOffsets: 1,
+        noticeOnUnload: 0,
+        storageManager: { type: 'firestore' },
+        container: '#gjs',
+        fromElement: true,
+
+        plugins: ['grapesjs-firestore', 'gjs-preset-webpage'],
+        pluginsOpts: {
+          'grapesjs-firestore': {
+            docId: 'gjs',
+            apiKey: firebaseApiKey,
+            authDomain: 'grapesjs-502e3.firebaseapp.com',
+            projectId: 'grapesjs-502e3',
+          }
+        }
+      });
+
+      editor.on('storage:load', function(e) {
+        console.log('STORAGE:LOAD ', e);
+      });
+      editor.on('storage:store', function(e) {
+        console.log('STORAGE:STORE ', e);
+      });
+      editor.on('storage:error', function(e) {
+        console.log('STORAGE:ERROR ', e);
+      });
+      window.editor = editor;
+    </script>
+  </body>
+</html>
