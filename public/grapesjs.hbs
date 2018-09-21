@@ -20,7 +20,7 @@
       }
     </style>
   </head>
-{{{script}}}
+
   <body>
 
     <div id="gjs" style="height:0px; overflow:hidden">
@@ -36,9 +36,8 @@
       </div>
     </div>
 
-
     <script type="text/javascript">
-      var firebaseApiKey = "" // process.env.FIREBASE_API_KEY;
+
       var editor = grapesjs.init({
         height: '100%',
         showOffsets: 1,
@@ -51,7 +50,7 @@
         pluginsOpts: {
           'grapesjs-firestore': {
             docId: 'gjs',
-            apiKey: firebaseApiKey,
+            apiKey: '{{firebaseImport}}',
             authDomain: 'grapesjs-502e3.firebaseapp.com',
             projectId: 'grapesjs-502e3',
           }

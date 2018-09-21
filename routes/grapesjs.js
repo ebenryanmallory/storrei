@@ -2,11 +2,10 @@ var express = require('express');
 var router = express.Router();
 require('dotenv').config();
 
-const firebaseData = process.env.TEST;
+const firebaseApiKey = process.env.FIREBASE_API_KEY;
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render(process.cwd() + '/public/grapesjs.hbs', { script: '<script>console.log("' + firebaseData + '");</script>', message: 'Hello there!' });
+  res.render(process.cwd() + '/public/grapesjs.hbs', { firebaseImport: firebaseApiKey }); 
 });
 
 module.exports = router;
