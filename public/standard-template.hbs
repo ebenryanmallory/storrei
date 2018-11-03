@@ -5,12 +5,12 @@
     <title>GrapesJS Firebase</title>
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
+    <script type="text/javascript" src="//feather.aviary.com/imaging/v3/editor.js"></script>
     <script src="https://unpkg.com/grapesjs"></script>
     <script src="dist/grapesjs-preset-webpage.min.js"></script>
-    <script src="dist/grapesjs-firestore.min.js"></script>
+    <script src="dist/grapesjs-custom-code.min.js"></script>
+    <script src="dist/grapesjs-aviary.min.js"></script>
 
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
     <style>
       body,
       html {
@@ -223,32 +223,6 @@
 
                 .glyphicon {
                     line-height: 1;
-                }
-
-                .heart {
-                    color: rgb(235, 94, 40);
-                    animation: heathing 1s ease infinite;
-                }
-
-                @keyframes heathing {
-                    0% {
-                        transform: scale(0.75);
-                    }
-                    20% {
-                        transform: scale(1);
-                    }
-                    40% {
-                        transform: scale(0.75);
-                    }
-                    60% {
-                        transform: scale(1);
-                    }
-                    80% {
-                        transform: scale(0.75);
-                    }
-                    100% {
-                        transform: scale(0.75);
-                    }
                 }
 
                 .footer .credits,
@@ -6214,24 +6188,31 @@
 
 
     <script type="text/javascript">
-      var firebaseApiKey = "" // process.env.FIREBASE_API_KEY;
       var editor = grapesjs.init({
         height: '100%',
         showOffsets: 1,
         noticeOnUnload: 0,
-        storageManager: { type: 'firestore' },
+        storageManager: {
+            id: 'gjs-',             // Prefix identifier that will be used on parameters
+            type: 'local',          // Type of the storage
+            autosave: true,         // Store data automatically
+            autoload: true,         // Autoload stored data on init
+            stepsBeforeSave: 1,     // If autosave enabled, indicates how many changes are necessary before store method is triggered
+        },
         container: '#gjs',
         fromElement: true,
-
-        plugins: ['grapesjs-firestore', 'gjs-preset-webpage'],
+        assetManager: {
+          assets: [
+           { type: 'image', src : 'http://placehold.it/350x250/78c5d6/fff/image1.jpg', height:350, width:250},
+         ]
+        },
+        plugins: ['gjs-preset-webpage', 'grapesjs-custom-code', 'gjs-aviary'],
         pluginsOpts: {
-          'grapesjs-firestore': {
-            docId: 'gjs',
-            apiKey: firebaseApiKey,
-            authDomain: 'grapesjs-502e3.firebaseapp.com',
-            projectId: 'grapesjs-502e3',
-          }
-        }
+            'gjs-aviary': {
+            config: {}
+          },
+            'grapesjs-custom-code': {}
+        },
       });
 
       editor.on('storage:load', function(e) {
