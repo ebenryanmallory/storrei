@@ -1,0 +1,13 @@
+{
+    "name": "storrei-app",
+    "public": true,
+    "alias": [
+        "storrei.com",
+        "www.storrei.com"
+        ],
+    "env": {
+        "TEST_SECRET": "@test-secret",
+        "FIREBASE_API_KEY": "@firebase-api-key"
+      }
+  }
+  
