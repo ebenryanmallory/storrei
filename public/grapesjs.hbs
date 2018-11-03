@@ -6,12 +6,12 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
     <link href="https://unpkg.com/grapesjs/dist/css/grapes.min.css" rel="stylesheet">
     <script src="https://unpkg.com/grapesjs"></script>
-    <script src="dist/grapesjs-preset-webpage.min.js"></script>
-    <script src="dist/grapesjs-firestore.min.js"></script>
+    <script src="/dist/grapesjs-preset-webpage.min.js"></script>
+    <script src="/dist/grapesjs-firestore.min.js"></script>
 
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/4.13.0/firebase-firestore.js"></script>
- 
+
     <style>
       body,
       html {
@@ -37,6 +37,7 @@
     </div>
 
     <script type="text/javascript">
+
       var editor = grapesjs.init({
         height: '100%',
         showOffsets: 1,
@@ -52,6 +53,7 @@
             apiKey: '{{firebaseImport}}',
             authDomain: 'grapesjs-502e3.firebaseapp.com',
             projectId: 'grapesjs-502e3',
+            collectionName: '{{ID}}',
           }
         }
       });
@@ -66,6 +68,16 @@
         console.log('STORAGE:ERROR ', e);
       });
       window.editor = editor;
+    </script>
+    <script>
+      firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    console.log(firebase.auth().currentUser.displayName);
+    HBS = 'randomDB'
+  } else {
+    console.log('nope');
+  }
+});
     </script>
   </body>
 </html>

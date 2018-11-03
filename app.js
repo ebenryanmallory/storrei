@@ -10,6 +10,7 @@ var grapesRouter = require('./routes/grapesjs');
 var portalRouter = require('./routes/portal');
 var standardtemplateRouter = require('./routes/standard-template');
 var blanktemplatelRouter = require('./routes/blank-template');
+var dashboardRouter = require('./routes/dashboard');
 
 var app = express();
 
@@ -23,9 +24,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', indexRouter);
 
 app.use('/users', usersRouter);
-app.use('/grapes', grapesRouter);
+app.use('/grapes/', grapesRouter);
 app.use('/portal', portalRouter);
 app.use('/standard-template', standardtemplateRouter);
 app.use('/blank-template', blanktemplatelRouter);
+app.use('/dashboard/', dashboardRouter);
 
 module.exports = app;
