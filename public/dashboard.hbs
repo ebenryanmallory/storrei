@@ -100,7 +100,8 @@ firebase.auth().onAuthStateChanged(function(user) {
     document.querySelector('#signout').style.display = "block";
     CreateNewUserDatabase();
   } else {
-    console.log('nope');
+    console.log('You have logged out');
+    document.querySelector('#signout').style.display = "none";
   }
 });
 document.querySelector("#standard-template").addEventListener("click", function goStandard(event) {

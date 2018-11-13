@@ -10,6 +10,10 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+body {
+  margin: 0 !important;
+  overflow-x: hidden;
+}
 a {
   color: #00B7FF;
 }
@@ -18,16 +22,33 @@ a {
   color: #fff;
   text-shadow: none;
 }
+#logo {
+  background-image: url(../images/logo.png);
+  min-width: 130px;
+  min-height: 80px;
+  width: 80px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 40px;
+}
 svg#open-book {
   max-width:45px;
   fill: #777777;
   margin-top: 40px;
 }
 .container {
-  max-width: 900px;
+  max-width: 920px;
   margin: auto;
+  padding: 20px;
 }
-
+#footer {
+  width: calc(100vw - 8px); 
+  background: #333; 
+  min-height: 250px;
+}
+.firebaseui-idp-password, .firebaseui-idp-password:hover, .mdl-button.firebaseui-idp-password:active, .mdl-button.firebaseui-idp-password:focus {
+  background-color: #545454 !important;
+}
 .uk-button {
   margin: 0;
   border: none;
