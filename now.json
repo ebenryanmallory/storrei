@@ -1,5 +1,6 @@
 {
     "name": "storrei-app",
+    "version": 2,
     "public": true,
     "alias": [
         "storrei.com",
@@ -8,6 +9,12 @@
     "env": {
         "TEST_SECRET": "@test-secret",
         "FIREBASE_API_KEY": "@firebase-api-key"
+      },
+    "build": {
+    "env": {
+        "TEST_SECRET": "@test-secret",
+        "FIREBASE_API_KEY": "@firebase-api-key"
+    }
       }
   }
   
