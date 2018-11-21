@@ -14,33 +14,43 @@ body {
   margin: 0 !important;
   overflow-x: hidden;
 }
-a {
+a:hover {
   color: #00B7FF;
+}
+.container {
+  margin: auto;
+  padding: 20px;
+}
+.default-header {
+  margin-top: 0px;
+  padding-top: 0px;
+}
+.tagline {
+  color: #00B7FF !important;
+  text-transform: uppercase;
+  font-style: italic;
 }
 ::selection {
   background: #39f;
   color: #fff;
   text-shadow: none;
 }
-#logo {
-  background-image: url(../images/logo.png);
-  min-width: 130px;
-  min-height: 80px;
-  width: 80px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin-top: 40px;
+.navbar {
+  padding: 0px;
+  margin-top: -25px;
 }
-svg#open-book {
-  max-width:45px;
-  fill: #777777;
-  margin-top: 40px;
-}
-.container {
-  max-width: 920px;
-  margin: auto;
-  padding: 20px;
-}
+.ribbontext {
+  margin-top: 19px;
+  position: absolute;
+  left: 70px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 3rem;
+  font-weight: 900;
+  max-width: 260px;
+  text-align: right;
+  line-height: 3rem;
+  }
 #footer {
   width: calc(100vw - 8px); 
   background: #333; 
@@ -90,4 +100,8 @@ svg#open-book {
   background-color: #1e87f0;
   color: #fff;
   border: 1px solid transparent;
+}
+[class^="icon-"] {
+  font-family: 'linearicons';
+  line-height: 2.8;
 }

@@ -2,6 +2,9 @@
 
 <head>
   <title>Storrei - tell yours</title>
+  <link rel="stylesheet" href="/stylesheets/plugins.css">
+  <link rel="stylesheet" href="/stylesheets/template.css">
+  <link rel="stylesheet" href="/linearicons/fonts.css">
   <link rel="stylesheet" href="/stylesheets/style.css">
   <!-- start Segment --><script>
     !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
@@ -16,14 +19,209 @@ mixpanel.init("b873b423978a12233f0c020ed5088de4");</script><!-- end Mixpanel -->
 </head>
 
 <body>
+  <!--preloader-->
+  <div id="preloader">
+      <div id="preloader-inner"></div>
+  </div><!--/preloader-->
+  <!--header-->
+  <header class="container default-header">
+      <div class="header-top pt10 clearfix">
+          <div class="container">
+              <div class="row">
+
+                  <div class="col-md-8 pt0 ml-auto">
+
+                      <ul class="list-inline text-right">
+                          <li class="list-inline-item tagline">
+                              Tell Yours.
+                          </li>
+                          <li class="list-inline-item">
+                              <a href="/portal" class="btn btn-primary">Sign In</a>
+                          </li>
+
+                      </ul>
+                  </div>
+              </div>
+
+
+          </div>
+      </div><!--header top-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <div class="container">                
+              <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <a class="navbar-brand" href="/"><img src="images/logo.png" alt=""></a>
+              <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+                  <ul class="navbar-nav ml-auto">
+                      <!--<li class="nav-item dropdown active">
+                          <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                          <div class="dropdown-menu dropdown-menu-left" aria-labelledby="dropdown01">
+                              <a class="dropdown-item" href="/">Home</a>
+                          </div>
+                      </li>-->
+                      <li class="nav-item"><a class="nav-link" href="/capabilities">Capabilites</a></li>
+                      <li class="nav-item"><a class="nav-link" href="/pricing">Pricing</a></li>
+                  </ul>
+
+              </div>
+          </div>
+      </nav>
+  </header><!--/header-->
   <div class="container">
-    <div id="logo"></div>
-    <p>Tell yours.</p>
     <p>Starting with code-free website building tools, we help you to tell your brand story and handle the technical parts for you.</p>
     <p>But we also go much deeper, partnering with you through the marketing process at every level of website creation in a way that has never been done before.</p>
     <a href="/portal" id="get-started"><button class="uk-button uk-button-default">Get Building!</button></a>
   </div>
+  <!--Features Section-->
+  <section>
+    <div class="container pt90 pb60">
+        <div class="row pb50">
+            <div class="col-md-12 mr-auto ml-auto">
+                <h2 class="font300 h1">
+                    Capabilities <span class="text-primary">and Features</span> 
+                </h2>
+                <p class="lead">
+                    Website editing capabilites to create visual designs without templates or code generators.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 mb30">
+                <img src="images/img1.jpg" alt="" class="img-fluid mb20">
+                <h4>Prototyping & fast iterations</h4>
+                <p>
+                    Use the same platform to start quickly iterating prototypes, even in very basic form, and progress to apolished and finished look.
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <img src="images/img2.png" alt="" class="img-fluid mb20">
+                <h4>Pre-built templates</h4>
+                <p>
+                    Get started fast by using a template that matches your project, and then begin customizing it to create your website.
+                </p>
+            </div>
+            <div class="col-md-4 mb30">
+                <img src="images/img3.png" alt="" class="img-fluid mb20">
+                <h4>Editor features</h4>
+                <p>
+                    Use basic codeless web building functionality to create visual elements.
+                </p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--/Features Section-->
+  <!--CTA Section-->
+  <section id="CTA-section">
+    <div class="bg-dark pt90 pb60">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-md-5 mb30">
+
+                    <h2 class="mb30 text-white">Get building!</h2>
+                    <p class="lead text-white-gray">
+                        Try out our website building tool, and start telling your brand story while we handle the technical parts for you.
+                    </p><br>
+                    <a href="/portal" class="btn btn-lg btn-white-outline">Get Started</a>
+                </div>
+                <div class="col-md-7 mb30">
+
+                    <img src="images/img3.png" alt="" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--/CTA Section-->
+  <!--Form Section-->
+  <section id="form-section">
+    <div class="container pt90 pb60">
+        <div class="row align-items-center">
+            <div class="col-md-5 mb30">
+                <h6 class="ribbontext">Stay in the know</h6>
+                <img src="images/ribbon.svg" alt="ribbon" class="img-fluid" style="fill: #333;">
+            </div>
+            <div class="col-md-6 offset-md-1 mb30">
+                <h3 class="font300 mb20 h2">Get updates <span class="text-primary">on product release dates</span></h3>
+
+                <p>
+                    Currently we are in pre beta, but we will let you know as soon as an official release is announced!
+                </p><br>
+                <form action="https://formspree.io/hellostorrei@gmail.com" method="POST">
+                  <div class="row">
+                      <div class="col-sm-6">
+                        <input id="name-input" class="form-control form-control-lg mb20" type="text" name="name" placeholder="Name" onfocus="focusName()" required />
+                      </div>
+                      <div class="col-sm-6">
+                        <input id="email-input" class="form-control form-control-lg mb20" type="email" name="_replyto" placeholder="E-mail address" onfocus="focusEmail()" required />
+                      </div>
+                      <div class="col-sm-6">
+                        <button class="btn btn-outline-primary btn-block uk-button uk-button-default" type="submit" value="Sign Up">Sign Up</button>
+                      </div>
+                      <input type="hidden" name="_subject" value="New updates request!" />
+                      <input type="hidden" name="_next" value="https://storrei.com/" />
+                  </div>
+                </form>
+            </div><!--/div-->
+        </div>
+    </div>
+  </section>
+<!--/Form Section-->
+  <footer class="footer">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-4 mb30">
+                  <a href="/capabilities">Capabilities</a>
+              </div>
+              <div class="col-md-4 mb30">
+                  <a href="/pricing">Pricing</a>
+              </div>
+              <div class="col-md-4 mb30">
+                  <a href="/portal">Sign In</a>
+              </div>
+          </div>
+          <div class="row pt40">
+
+              <div class="col-md-6">
+                  <!-- Social links-->
+                  <h6 style="color: white;">Connect with us!</h6>
+                  <a href="#">
+                      <img style="max-width: 70px;" src="images/codepen.jpg" />
+                  </a><p>(coming soon)</p>
+              </div>
+              <div class="col-md-6 text-right">
+                  &copy; Storrei app 2018. All rights reserved.
+              </div>
+          </div>
+      </div>
+  </footer>
+
+  <a href="#" class="back-to-top hidden-xs-down show" id="back-to-top"><i style="margin-top: 10px;">
+      <svg width="24" height="24" fill-rule="evenodd" clip-rule="evenodd"><path d="M23.245 20l-11.245-14.374-11.219 14.374-.781-.619 12-15.381 12 15.391-.755.609z"/></svg>
+  </i></a>
+
 </body>
+
+<script>
+    window.onload = function() {
+    document.querySelector('#preloader').style.display = "none";
+    };
+  function focusName() { 
+    document.querySelector('#name-input').value = ' '; 
+    };
+  function blurName() {
+    document.querySelector('#name-input').value = 'Name';
+    };
+    function focusEmail() { 
+    document.querySelector('#email-input').value = ' '; 
+    };
+  function blurEmail() {
+    document.querySelector('#email-input').value = 'E-mail address';
+    };
+</script>
 
 <script type="text/javascript">
 

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="459px" height="349px" viewBox="0 0 459 349" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>ribbon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="ribbon" fill-rule="nonzero" fill="#00B7FF">
+            <path d="M423.214,183.162 L237.189,299.955 C246.534,299.025 255.947,298.392 265.409,298.392 C348.851,298.392 416.621,334.836 438.715,348.252 L419.351,236.093 L457.629,198.944 C448.192,192.496 436.691,187.234 423.214,183.162 Z" id="Shape"></path>
+            <polygon id="Shape" points="421.82 174.779 450.092 157.026 211.684 157.026 213.401 177.584 213.73 181.508 214.061 185.45 223.594 299.218 412.775 180.449 417.395 177.552"></polygon>
+            <polygon id="Shape" points="458.696 149.175 421.415 0.444 419.098 0.444 412.082 0.444 0.555 0.444 52.453 69.636 0 149.175 203.15 149.175 207.083 149.175 211.025 149.175 458.68 149.175"></polygon>
+        </g>
+    </g>
+</svg>
